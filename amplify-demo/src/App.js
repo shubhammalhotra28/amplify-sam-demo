@@ -6,6 +6,7 @@ function App() {
   const [apiMessage, setApiMessage] = useState("");
 
   const getApiMessage = async () => {
+    
 
     console.log(process.env.REACT_APP_ENDPOINT);
     const response = await fetch(`${process.env.REACT_APP_ENDPOINT}hello`, {
